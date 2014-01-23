@@ -245,7 +245,7 @@
         return d;
     };
     function getDims(elem) {
-        var offset = $(elem).offset();
+        var offset = $(elem).position();
         return {
             position: $(elem).css('position'),
             top: Number($(elem).css('top').replace(/[^\d\.-]/g,'')),
